@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSK Struzik Legnica</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/3a3dd1e1c8.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("lHihBznFPbGhSF-so");
+      })();
+      </script>
+      <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+          <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+              <img src="../img/LOGO_2-removebg-preview (1).png" alt="logo" class="logo"/>
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- links -->
+            <div class="links-container">
+              <ul class="links">
+                <li>
+                  <a href="#home" class="scroll-link">Home</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll-link">O nas</a>
+                </li>
+                <li>
+                  <a href="#offer" class="scroll-link">Oferta</a>
+                </li>
+                <li>
+                  <a href="#pkk" class="scroll-link">PKK</a>
+                </li>
+                <li>
+                  <a href="#contact" class="scroll-link">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+          <div class="banner-container1">
+            <h2>Do najbliższego kursu pozostało:</h2>
+            <h3 id="time-left"></h3>
+            <a href="#contact" class="scroll-link btn btn-white">Zapisz się!</a>
+          </div>
+          <div class="banner-container2">
+            <h1>Struzik</h1>
+            <p>
+              Nauka Jazdy
+            </p>
+          </div>
+        </div>
+      </header>
+      <section id="about" class="section">
+        <div class="about-us">
+          <div class="title">
+            <h2>O <span>nas</span></h2>
+            <div class="underline"></div>
+          </div>
+          <div class="about-us-info">
+            <p>W OSK STRUZIK uczymy przede wszystkim logicznego myślenia za kierownicą oraz bezpiecznej jazdy.
+              Każda osoba powinna prowadzić swój pojazd w sposób pewny i zdecydowany oraz mieć przekonanie,
+              że bezstresowo poradzi sobie w różnych sytuacjach.</p>
+            <h4>Pasja rodzi profesjonalizm a profesjonalizm daje jakość - to nasze Credo</h4>
+            <div class="about-us-instructor">
+            <div class="about-us-instructor-imgContainer">
+               <img src="https://pbs.twimg.com/profile_images/1560186554781519873/wq6vdCir_400x400.jpg" alt="zdjęcie instruktora">
+                <p>Piotr Struzik - instruktor i wykładowca</p>
+            </div>
+                <p>"Jako wieloletni kierowca zawodowy a obecnie instruktor nauki jazdy bardzo angażuje się w swoją pracę.
+                Stale udoskonalam swoje umiejętności na cyklicznych szkoleniach i warsztatach. Propaguje przede
+                wszystkim bezpieczną i swiadomą jazdę. Motoryzacja jest moją pasją. Jestem instruktorem nauki jazdy
+                z doświadczeniem, który stawia na profesjonalizm i dbałość o szczegóły. W samochodzie nie zabraknie
+                cierpliwości, ogromnej dawki wiedzy, a przy tym miłej atmosfery."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="offer" class="section">
+        <div class="offer-container">
+          <div class="title">
+            <h2>Oferta</h2>
+            <div class="underline"></div>
+          </div>
+            <div class="grid-container">
+              <div class="grid-item1">
+                <h3>Kategoria B</h3>
+                <div class="grid-item1-card">
+                <p>Kurs kat. B można rozpocząć trzy miesiące przed ukończeniem 18 roku życia</p>
+                </div>
+                <div>
+                  <h4>Kurs zawiera:</h4>
+                  <ul>
+                    <li>30 godzin zajec teoretycznych(stacjonarnie lub online) w tym 4h zajęć z pierwszej pomocy;</li>
+                    <li>30 godzin zajec praktycznych;</li>
+                    <li>egzamin wewnetrzny teoretyczny;</li>
+                    <li>egzamin wewnetrzny praktyczny;</li>
+                    <li>podrecznik + dostep do testów egzaminacyjnych;</li>
+                    <li>pojazd szkoleniowy Hyundai i20 - identyczny jak w WORD Legnica.</li>
+                </ul>
+
+                </div>
+              </div>
+              <div class="grid-item2"><h4>Kurs standardowy kat. B - 2500 zł</h4></div>
+              <div class="grid-item3"><p><span>Kurs weekendowy kat. B - 3300 zł</span><br>
+                *bez oczekiwania na termin nowego kursu<br>
+                *zajęcia teoretyczne i praktyczne w weekendy</p></div>
+              <div class="grid-item4"><p><span>Kurs indywidualny kat.B - 3000 zł</span><br>
+                *bez oczekiwania na termin nowego kursu<br>
+                *elastyczny grafik dopasowany do kursanta</p></div>
+              <div class="grid-item5"><p><span>Kurs ekspresowy kat.B - 3300 zł</span><br>
+                *bez oczekiwania na termin nowego kursu<br>
+                *gwarancja wyjeżdżenia godzin w 14 dni</p></div>
+              <div class="grid-item6"><p><span>Jazdy doszkalajace :</span><br>
+                Nasi kursanci 1h - 90 zł<br>
+                Pozostali 1h - 100 zł<br>
+                *w przypadku wiekszej ilości godzin cena ustalana indywidualnie</p></div>
+              <div class="grid-item7"><p><span>Płatności w ratach 0% za kurs prawa jazdy:</span><br>
+                I rata w wysokości minimum 500 zł – płatna w dniu podpisania umowy<br>
+                II rata w wysokości minimum 1000 zł – płatna przed planowaniem harmonogramu szkolenia
+                praktycznego<br>
+                III rata pozostała kwota – płatna do 15 godziny jazd.</p></div>
+            </div>
+        </div>
+      </section>
+      <section id="pkk" class="section">
+        <div class="title">
+          <h2>Jak rozpocząć kurs?</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="pkk-container">
+          <div class="pkk-container-info">
+            <p>Utwórz Profil Kandydata na Kierowcę (PKK) w Wydziale Komunikacji Urzędu Miasta lub
+              Starostwa Powiatowego (zgodnie z miejscem zameldowania lub zamieszkania).</p>
+            <h4>Z numerem PKK zapraszamy do OSK STRUZIK</h4>
+          </div>
+          <div class="pkk-container-info2">
+            <div class="pkk-card">
+              <p>Niezbędne dokumenty, które trzeba przedłożyć w Wydziale Komunikacji:</p>
+            </div>
+            <ul>
+              <li>dokument tożsamości (dowód osobisty lub paszport)</li>
+              <li>zdjęcie o wymiarach 3,5 x 4,5 cm, przedstawiająca osobę bez nakrycia głowy i okularów z
+                ciemnymi szkłami, obejmującą wizerunek od wierzchołka głowy do górnej części barków, tak
+                aby twarz zajmowała 70–80% fotografii</li>
+              <li>orzeczenie lekarskie</li>
+              <li>wypełniony wniosek o wydanie prawa jazdy (powinieneś otrzymać go w urzędzie)</li>
+              <li>pisemna zgoda rodziców lub opiekunów prawnych/obecność rodzica w Urzędzie w przypadku
+                osób, które nie ukończyły 18 roku życia</li>
+              <li>wiza, karta stałego pobytu w przypadku Obcokrajowców</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="title">
+          <h2>Kontakt</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-modal">
+            <div class="modal-left"><i class="fa fa-solid fa-envelope"></i></div>
+            <div class="modal-right">
+              <h4>Wiadomość wysłana</h4>
+              <button class="close-modal btn">ok</button>
+            </div>
+          </div>
+          <div class="contact-container">
+            <div class="form-group">
+              <label for="name">Imię i Nazwisko(wymagane)</label>
+              <input 
+              type="text"
+              class="form-control"
+              id="name"
+              />
+              <div class="required-name-message">Pole wymagane</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Adres e-mail(wymagane)</label>
+              <input 
+              type="email"
+              class="form-control"
+              id="email"
+              />
+              <div class="required-mail-message">Pole wymagane</div>
+            </div>
+            <div class="form-group">
+              <label for="tel">Numer telefonu(wymagane)</label>
+              <input 
+              type="text"
+              class="form-control"
+              id="tel"
+              />
+              <div class="required-phone-message">Pole wymagane</div>
+            </div>
+            <div class="form-group">
+              <label for="title">Tytuł wiadomości</label>
+              <input 
+              type="text"
+              class="form-control"
+              id="title"
+              />
+            </div>
+            <div class="form-group message-area">
+              <label for="message">Treść wiadomości</label>
+              <textarea 
+              type="text"
+              class="form-control"
+              id="message"
+              wrap="soft">
+              </textarea>
+            </div>
+            <div class="form-group rodo">
+              <input 
+              type="checkbox"
+              class="form-control"
+              id="rodo"
+              required
+              /> 
+              <label><button class="btn btn-rodo modal">Zapoznaj się z polityką RODO</button></label>
+            </div>
+            <button id="sendMessage" class="btn2 submit">Wyślij wiadomość</button>
+          </div>
+          
+          <div class="contact-container2">
+            <div class="contact-icons-group">
+              <a href="tel:734186805" class="contact-icons"><i class="fa fa-solid fa-phone"></i>555-555-555</a>
+              <a href="" class="contact-icons"><i class="fa fa-brands fa-facebook"></i>Facebook</a>
+              <a href="" class="contact-icons"><i class="fa fa-brands fa-instagram"></i>Instagram</a>
+              <a class="contact-icons"><i class="fa fa-solid fa-envelope"></i></i>struzkik@dfdfdsfsd</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section">
+        <div class="footer-group">
+          <p>
+            &copy; Ośrodek Szkolenia Kierowców Struzik Legnica
+           <span id="date"></span>
+         </p>
+          <p>created by Krzysztof Prońko</p>
+        </div>
+        <div class="dash"></div>
+        <div class="footer-group">
+          <div class="map-wrapper">
+            <h4>Jesteśmy tutaj</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.6075962476984!2d16.159294272144333!3d51.20788188179299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f12900a4076f1%3A0xbf866ab73ac922a8!2sRynek%209%2C%2059-220%20Legnica!5e0!3m2!1spl!2spl!4v1673968249169!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="dash"></div>
+        <div class="footer-group social">
+          <p><a href=""><i class="fa fa-brands fa-facebook"></i></a></p>
+          <p><a href=""><i class="fa fa-brands fa-instagram"></i></a></p>
+          <p><a href="tel:734186805"><i class="fa fa-brands fa-phone"></i></a></p>
+        </div>
+      </footer>
+      <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <h3>Informacja o RODO:</h3>
+            <p>Wyrażam zgodę na przetwarzanie moich danych osobowych firmie Ośrodek Szkolenia Kierowców
+              Piotr Struzik , prowadzącej Ośrodek Szkolenia Kierowców STRUZIK pod adresem ul. Rynek 9, 59-220
+              Legnica. w zakresie przewidzianym przez wymogi Rozporządzenia Ministra Infrastruktury i
+              Budownictwa z dnia 4 marca 2016 r. w sprawie szkolenia osób ubiegających się o uprawnienia do
+              kierowania pojazdami, instruktorów i wykładowców oraz w ustawowym terminie po zakończeniu
+              szkolenia odnoszącym się do przechowywania dokumentacji oraz nieinformowanie mnie o usunięciu
+              tych danych po ustawowym terminie. Mam prawo dostępu, sprostowania, usunięcia, ograniczenia
+              dostępu do danych. Istnieje możliwość wniesienia skargi do PUODO w przypadku stwierdzenia, że
+              przetwarzanie danych narusza przepisy rozporządzenia o ochronie danych osobowych z dnia 27
+              kwietnia 2016.</p>
+           <button class="close-btn"><i class="fas fa-times"></i></button>
+       </div>
+</body>
+</html>
