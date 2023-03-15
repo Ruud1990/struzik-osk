@@ -88,8 +88,8 @@ button.addEventListener('click', function sendMail(){
         message: document.getElementById('message').value,
     }
 
-    const serviceID = 'service_x9e4stv';
-    const templateID = 'template_1iibw3c';
+    const serviceID = 'service_dtw9lsb';
+    const templateID = 'template_4rrr91a';
     if(params.name === ''){
         console.log('error-name');
         nameInput.classList.add('show-message');
@@ -141,7 +141,7 @@ date.innerHTML = new Date().getFullYear();
 const timeLeft = document.getElementById('time-left')
 
 //month day year
-const courseDate = new Date('02/01/2023 17:00:00');
+const courseDate = new Date('04/01/2023 17:00:00');
 
 const second = 1000;
 const minute = second * 60;
@@ -192,3 +192,46 @@ const handleRodoModal  = () => {
 }
 
 handleRodoModal();
+
+// ********** galerry ************ //
+
+
+
+const slideGallery =  () => {
+    const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".nextBtn");
+const prevBtn = document.querySelector(".prevBtn");
+slides.forEach(function (slide, index) {
+  slide.style.left = `${index * 100}%`;
+});
+let counter = 0;
+nextBtn.addEventListener("click", function () {
+  counter++;
+  slide();
+});
+
+prevBtn.addEventListener("click", function () {
+  counter--;
+  slide();
+});
+
+function slide() {
+  if (counter < slides.length - 1) {
+    nextBtn.style.display = "block";
+  } else {
+    nextBtn.style.display = "none";
+  }
+  if (counter > 0) {
+    prevBtn.style.display = "block";
+  } else {
+    prevBtn.style.display = "none";
+  }
+  slides.forEach(function (slide) {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+}
+
+prevBtn.style.display = "none";
+}
+
+slideGallery();
