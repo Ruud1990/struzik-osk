@@ -11,7 +11,7 @@
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+   <script type="text/javascript">
       (function(){
         emailjs.init("0LyFXVLv2K8y-WMtB");
       })();
@@ -59,10 +59,6 @@
             <a href="#contact" class="scroll-link btn btn-white">Zapisz się!</a>
           </div>
           <div class="banner-container2">
-            <h1>Struzik</h1>
-            <p>
-              Nauka Jazdy
-            </p>
           </div>
         </div>
       </header>
@@ -136,11 +132,11 @@
                 <div>
                   <h4>Kurs zawiera:</h4>
                   <ul>
-                    <li>30 godzin zajec teoretycznych(stacjonarnie lub online) w tym 4h zajęć z pierwszej pomocy;</li>
-                    <li>30 godzin zajec praktycznych;</li>
+                    <li>30 godzin zajęć teoretycznych w tym 4h zajęć z pierwszej pomocy;</li>
+                    <li>30 godzin zajęć praktycznych;</li>
                     <li>egzamin wewnetrzny teoretyczny;</li>
                     <li>egzamin wewnetrzny praktyczny;</li>
-                    <li>podrecznik + dostep do testów egzaminacyjnych;</li>
+                    <li>podręcznik + dostęp do testów egzaminacyjnych;</li>
                     <li>pojazd szkoleniowy Hyundai i20 - identyczny jak w WORD Legnica.</li>
                 </ul>
 
@@ -155,7 +151,7 @@
                 *elastyczny grafik dopasowany do kursanta</p></div>
               <div class="grid-item5"><p><span>Kurs ekspresowy kat.B - 3300 zł</span><br>
                 *bez oczekiwania na termin nowego kursu<br>
-                *gwarancja wyjeżdżenia godzin w 14 dni</p></div>
+                *gwarancja wyjeżdżenia godzin w 12 dni</p></div>
               <div class="grid-item6"><p><span>Jazdy doszkalajace :</span><br>
                 Nasi kursanci 1h - 90 zł<br>
                 Pozostali 1h - 100 zł<br>
@@ -281,7 +277,7 @@
          <div class="footer-group">
           <div class="map-wrapper">
             <h4>Jesteśmy tutaj</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.6075962476984!2d16.159294272144333!3d51.20788188179299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f12900a4076f1%3A0xbf866ab73ac922a8!2sRynek%209%2C%2059-220%20Legnica!5e0!3m2!1spl!2spl!4v1673968249169!5m2!1spl!2spl" allowfullscreen="" title="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.6075962476984!2d16.159294272144333!3d51.20788188179299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f12900a4076f1%3A0xbf866ab73ac922a8!2sRynek%209%2C%2059-220%20Legnica!5e0!3m2!1spl!2spl!4v1673968249169!5m2!1spl!2spl" allowfullscreen="" title="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
            <div class='social'>
             <p><a href="https://www.facebook.com/profile.php?id=100090269949069"><i class="fa fa-brands fa-facebook"></i></a></p>
@@ -295,7 +291,8 @@
           <div class="contact-icons-group2">
             <div><i class="fa fa-sharp fa-solid fa-door-open contact-icons"></i><p>Biuro czynne:<br>poniedziałek 17-19<br>Środa 17-19<br>Piątek 8-10</p><p>Nie dasz rady w tych godzinach? Zadzwoń umówimy się w dogodnym dla Ciebie terminie.</p></div>
             <div><i class="fa fa-solid fa-clock contact-icons"></i><p>Kontakt 24/7</p></div>
-            <div> <i class="fa fa-sharp fa-solid fa-credit-card contact-icons"></i><p>Płatność: karta, gotówka, blik lub przelew</p></div>
+            <div> <i class="fa fa-sharp fa-solid fa-credit-card contact-icons"></i><p>Płatność: karta, gotówka, blik lub przelew</p>
+            <p>Nr konta ING: 77 1050 1748 1000 0097 7285 6846</p></div>
           </div>
         </div>
           <div class="dash"></div>
@@ -310,7 +307,13 @@
       <a class="scroll-link top-link" href="#home">
         <i class="fas fa-arrow-up"></i>
       </a>
-      <div class="modal-overlay">
+      <!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Wtyczka czatu code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+        <div class="modal-overlay">
         <div class="modal-container">
           <h3>Informacja o RODO:</h3>
             <p>Wyrażam zgodę na przetwarzanie moich danych osobowych firmie Ośrodek Szkolenia Kierowców
@@ -325,6 +328,29 @@
               kwietnia 2016.</p>
            <button class="close-btn"><i class="fas fa-times"></i></button>
        </div>
-       <script type="module" src="./src/js/main.js"></script>
+     <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "112689058406286");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+     <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>
